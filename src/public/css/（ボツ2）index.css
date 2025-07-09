@@ -1,0 +1,162 @@
+/* .todo__alert{
+    background-color:  #d1e7dd;
+    border-color: #badbcc;
+} */
+ /* 全部に書かなくてもいい */
+.todo__alert--success{
+    padding: 10px 20px;
+    background-color:  #d1e7dd;
+    border-color: #badbcc;
+    color: #0f5132;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.todo__alert--danger {
+    padding: 10px 0;
+    border-color: #f5c2c7;
+    background-color: #f8d7da;
+    color: #842029;
+}
+
+.todo__alert--danger ul {
+    margin: 0;
+}
+/* ulの点のmargin？というか、HTMLないけどどうするんだろ */
+
+.todo__content{
+    padding: 60px 15px;
+    margin: 0 auto;
+    max-width: 1230px;
+}
+
+/* ワイズで幅絞って、マージンで真ん中持ってくる */
+.create-form{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+.create-form__item{
+    width: 70%;
+}
+
+/* 作成ボタンと高さを揃える */
+.create-form__item--input{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    height: 40px;
+}
+
+/* .create-form__button{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+} */
+
+.create-form__button{
+    width: 20%;
+}
+
+/* inputと高さを揃える。paddingも揃える */
+.create-form__button--submit{
+    width: 100%;
+    height: 40px;
+    padding:10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.todo-table{
+    width: 70%;
+    margin: 30px auto;
+}
+
+/* widthは続けていく */
+.todo-table__inner{
+    width: 100%;
+}
+
+.todo-table__row{
+    border-bottom: 1px solid #ddd;
+}
+
+.todo-table__header{
+    padding:12px;
+    width: 20%;
+    /* widthいる？？？ */
+    font-weight: bold;
+    text-align: left;
+    /* font-size: 18px; いらなかった*/
+}
+
+/* .todo-table__item{
+    width: 100%;
+} */
+/* 左のセルだけ指定 */
+.todo-table__item:first-of-type {
+    padding: 12px;
+    width: 90%;
+}
+
+.update-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* align-items: center;なくても良さそうだけど… */
+}
+
+.update-form__item{
+    width:80%;
+    line-height: 50%;
+    /*   line-height: 50%;行間指定。 これがいるのか、画像からじゃわからんw*/
+}
+
+.update-form__item--input{
+    width: 100%;
+    /* padding: 10px;アウトラインをなくすとpaddingもいらない */
+    border:none;
+    outline: none;
+    /* outline:つけると、ホバーした時に枠すら出ない！ */
+}
+
+.update-form__button{
+    width: 50px;
+}
+/* %ではなく、pxで幅決めちゃう。inputまでは％で計算しやすいけど、それ以降は大変そうだもんね */
+/* あとpxで決めたら、削除ボタンとも揃えられる！ */
+
+.update-form__button--submit{
+    padding: 5px;
+    width: 100%;
+    border:none;
+    border-radius: 3px;
+    background-color: #0000ff;
+    color: #fff;
+    cursor: pointer;
+}
+/*
+.delete-form{
+} */
+/* 何もない */
+
+.delete-form__button{
+    width: 50px
+}
+
+.delete-form__button--submit{
+    padding: 5px;
+    width: 100%;
+    background-color: #ff0000;
+    border:none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+}
+
