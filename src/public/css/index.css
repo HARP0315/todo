@@ -28,6 +28,7 @@
     width: 70%;
 }
 
+/* ワイズで幅絞って、マージンで真ん中持ってくる */
 /* - .create-form { */
 .create-form, .search-form {
     display: flex;
@@ -46,6 +47,7 @@
     width: 70%;
 }
 
+/* 作成ボタンと高さを揃える */
 /* - .create-form__item-input { */
 .create-form__item--input, .search-form__item--input {
     margin-right: 10px;
@@ -73,6 +75,7 @@
     width: 20%;
 }
 
+/* inputと高さを揃える。paddingも揃える */
 /* - .create-form__button-submit { */
 .create-form__button--submit, .search-form__button--submit {
     padding: 10px;
@@ -91,6 +94,7 @@
     text-align: center;
 }
 
+/* widthは続けていく */
 .todo-table__inner {
     width: 100%;
 }
@@ -102,8 +106,10 @@
 .todo-table__header {
     padding: 12px;
     width: 20%;
+    /* widthいる？？？ */
     text-align: left;
     font-weight: bold;
+    /* font-size: 18px; いらなかった*/
 }
 
 /* 追加 */
@@ -111,6 +117,7 @@
     margin-right: 40%;
 }
 
+/* 左のセルだけ指定 */
 .todo-table__item:first-of-type {
     padding: 12px;
     width: 90%;
@@ -119,6 +126,7 @@
 .update-form {
     display: flex;
     align-items: center;
+    /* align-items: center;なくても良さそうだけど… */
     justify-content: space-between;
 }
 
@@ -126,12 +134,15 @@
     /* -   width: 80%; */
     width: 40%;
     line-height: 50%;
+    /*   line-height: 50%;行間指定。 これがいるのか、画像からじゃわからんw*/
 }
 
 .update-form__item--input {
     width: 100%;
+    /* padding: 10px;アウトラインをなくすとpaddingもいらない */
     outline: none;
     border: none;
+    /* outline:つけると、ホバーした時に枠すら出ない！ */
 }
 
 /* 追加 */
@@ -143,6 +154,8 @@
 .update-form__button {
     width: 50px;
 }
+/* %ではなく、pxで幅決めちゃう。inputまでは％で計算しやすいけど、それ以降は大変そうだもんね */
+/* あとpxで決めたら、削除ボタンとも揃えられる！ */
 
 .update-form__button--submit {
     padding: 5px;
@@ -153,6 +166,11 @@
     color: #fff;
     cursor: pointer;
 }
+
+/*
+.delete-form{
+} */
+/* 何もない */
 
 .delete-form__button {
     width: 50px;
